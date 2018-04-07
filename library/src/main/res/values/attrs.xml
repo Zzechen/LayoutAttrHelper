@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HelperView">
+        <attr name="helper_radius" format="dimension"/>
+        <attr name="helper_ripple_enable" format="boolean"/>
+        <attr name="helper_stroke_width" format="dimension"/>
+        <attr name="helper_stroke_color" format="color"/>
+        <attr name="helper_stroke_press_color" format="color"/>
+        <attr name="helper_solid_color" format="color"/>
+        <attr name="helper_solid_press_color" format="color"/>
+    </declare-styleable>
+</resources>
