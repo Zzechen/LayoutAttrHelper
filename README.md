@@ -88,14 +88,10 @@
     <style name="AppTheme.Day" parent="AppTheme">
         <item name="theme_text_bg">@color/colorPrimary</item>
         <item name="theme_text_color">@color/colorAccent</item>
-        <item name="theme_drawable_bg">@drawable/bg_day</item>
-        <item name="theme_image_bg">@drawable/img_day</item>
     </style>
     <style name="AppTheme.Night" parent="AppTheme">
         <item name="theme_text_bg">#FF40D2</item>
         <item name="theme_text_color">@color/colorPrimary</item>
-        <item name="theme_drawable_bg">@drawable/bg_night</item>
-        <item name="theme_image_bg">@drawable/img_night</item>
     </style>
     
     ```
