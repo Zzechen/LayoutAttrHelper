@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Day">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:label="Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ShapeActivity"/>
-        <activity android:name=".SelectorActivity"/>
-        <activity android:name=".ThemeResActivity"/>
-        <activity android:name=".ThemeFileActivity"/>
+        <activity android:name=".ShapeActivity" android:label="Shape"/>
+        <activity android:name=".SelectorActivity" android:label="Selector"/>
+        <activity android:name=".ThemeResActivity" android:label="ThemeRes"/>
+        <activity android:name=".ThemeFileActivity" android:label="ThemeFile"/>
     </application>
 
 </manifest>
