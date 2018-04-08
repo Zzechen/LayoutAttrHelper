@@ -1,116 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingPrefix">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tv_normal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp">
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="Normal"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="Selector"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="normal shape"/>
+    <TextView
+        android:id="@+id/tv_theme_res"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="Theme(res)"/>
 
-            <TextView
-                android:padding="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="rectangle"
-                app:helper_solid_color="#FF4081"/>
+    <TextView
+        android:id="@+id/tv_theme_file"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="Theme(file)"/>
 
-            <TextView
-                android:padding="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="rectangle + corner"
-                app:helper_radius="@dimen/dimen_dp_10"
-                app:helper_solid_color="#FF4081"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="selector"/>
-
-            <TextView
-                android:padding="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="normal solid"
-                app:helper_radius="8dp"
-                app:helper_solid_color="#FF4081"
-                app:helper_solid_press_color="@color/colorPrimary"/>
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="solid + stroke"
-                android:textColor="#ffffff"
-                app:helper_radius="@dimen/dimen_dp_10"
-                app:helper_solid_color="#FF4081"
-                app:helper_solid_press_color="@color/colorPrimary"
-                app:helper_stroke_color="@color/colorPrimary"
-                app:helper_stroke_press_color="#FF4081"
-                app:helper_stroke_width="1dp"
-                />
-
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="ripple enable"
-                android:textColor="#ffffff"
-                android:textAllCaps="false"
-                app:helper_radius="30dp"
-                app:helper_ripple_enable="true"
-                app:helper_solid_color="#FF4081"
-                app:helper_solid_press_color="@color/colorPrimary"
-                />
-
-            <Button
-                android:textAllCaps="false"
-                style="@style/main_btn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="style"
-                android:onClick="click"
-                android:textColor="#ffffff"
-                />
-        </LinearLayout>
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

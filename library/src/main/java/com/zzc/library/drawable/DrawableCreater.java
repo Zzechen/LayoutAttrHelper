@@ -1,10 +1,13 @@
-package com.zzc.library;
+package com.zzc.library.drawable;
 
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+
+import com.zzc.library.R;
 
 /**
  * auth zzc
@@ -12,15 +15,19 @@ import android.view.View;
  * desc ${desc}
  */
 
-class DrawableCreater {
+public class DrawableCreater {
     private static final String TAG = DrawableCreater.class.toString();
 
     private DrawableCreater() {
     }
 
-    static void setDrawable(AttributeSet attrs, View view) {
+    public static void setDrawable(AttributeSet attrs, View view) {
         if (attrs == null || view == null) return;
         TypedArray typedArray = view.getContext().obtainStyledAttributes(attrs, R.styleable.HelperView);
+        if (typedArray.getIndexCount() == 0) {
+            typedArray.recycle();
+            return;
+        }
         DrawableBuilder db = new DrawableBuilder();
         if (typedArray.hasValue(R.styleable.HelperView_helper_radius)) {
             db.radius(typedArray.getDimension(R.styleable.HelperView_helper_radius, 0));

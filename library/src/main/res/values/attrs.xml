@@ -9,4 +9,8 @@
         <attr name="helper_solid_color" format="color"/>
         <attr name="helper_solid_press_color" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="ThemeView">
+        <attr name="helper_support_theme" format="boolean"/>
+    </declare-styleable>
 </resources>
