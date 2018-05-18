@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.zzc.library.drawable.DrawableCreater;
 import com.zzc.library.theme.ThemeHelper;
+import com.zzc.library.theme.ResourcesLoader;
 
 import java.lang.reflect.Field;
 
@@ -22,6 +23,10 @@ public class LayoutAttrHelper {
     private static final String TAG = LayoutAttrHelper.class.toString();
 
     private LayoutAttrHelper() {
+    }
+
+    public static void initForFile(Context context){
+        ResourcesLoader.setContext(context);
     }
 
     public static ThemeHelper compose(Activity activity) {
